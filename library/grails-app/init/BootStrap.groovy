@@ -52,6 +52,18 @@ openingHours:'24hours',
 librarian:'Mrs Angela Price',
 book:'How to code c#',
 student:'Oli Jones').save()
+
+def librarian1=new Librarian(userName:'alprice',
+password:'aka',
+name:'Angela Price',
+email:'A.Price@gmail.com',
+telephone:'07463753010').save()
+
+def librarian2=new Librarian(userName:'Ldyer1',
+password:'cod',
+name:'Lee dyer',
+email:'L.Dyer@gmail.com',
+telephone:'07413654010').save()
 }
     def destroy = {
     }
