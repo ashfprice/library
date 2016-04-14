@@ -24,7 +24,22 @@ student:'Chloe Acland',
 dateBorrowed: new Date('14/04/2016'),
 returnDate: new Date('20/04/2016')).save()
 
+def book2=new Book(title:'How to code C#',
+author:'Elliot Manson',
+isbn:'A102',
+student:'Oli Jones',
+dateBorrowed: new Date('14/04/2016'),
+returnDate: new Date('22/04/2016')).save()
 
+def student1=new Student(name:'Oli Jones',
+studentid:'OJ101',
+email:'O.Jones@gmail.com',
+course:'Aircraft Engineering').save()
+
+def student2=new Student(name:'Chloe Northedge',
+studentid:'CN101',
+email:'C.Northedge@gmail.com',
+course:'Hair and Beauty').save()
 }
     def destroy = {
     }
