@@ -40,6 +40,18 @@ def student2=new Student(name:'Chloe Northedge',
 studentid:'CN101',
 email:'C.Northedge@gmail.com',
 course:'Hair and Beauty').save()
+
+def library1=new Library(location:'City Campus',
+openingHours:'24hours',
+librarian:'Mrs Taylor Jones',
+book:'Hair and Beauty',
+student:'Chloe Acland').save()
+
+def library2=new Library(location:'Collegiate Campus',
+openingHours:'24hours',
+librarian:'Mrs Angela Price',
+book:'How to code c#',
+student:'Oli Jones').save()
 }
     def destroy = {
     }
