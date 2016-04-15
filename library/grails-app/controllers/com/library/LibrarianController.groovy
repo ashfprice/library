@@ -95,6 +95,47 @@ class LibrarianController {
         }
     }
 
+def login(){
+
+if(params.cName)
+return[cName:params.cName,aName:params.aName]
+
+}
+
+def validate(){
+
+def user = Librarian.findByUserName(params.username)
+
+if(user && user.password == params.password){
+
+session.user = user
+
+if(params.cName)
+
+redirect controller:params.cName, action:params.cName
+
+else
+
+redirect controller:'course',action:'index'
+
+}else{
+
+flash.message = "Invalid username and password"
+
+render view:'login'
+
+}
+}
+
+def logout={
+
+session.user = null
+
+redirect(uri:/')
+
+}
+
+
     protected void notFound() {
         request.withFormat {
             form multipartForm {
