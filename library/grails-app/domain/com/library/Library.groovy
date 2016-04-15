@@ -6,11 +6,7 @@ String location
 
 String openingHours
 
-String book
-
-String student
-
-String librarian
+static hasMany=[librarians:Librarian,students:Student,books:Book]
 
 String toString(){
 
